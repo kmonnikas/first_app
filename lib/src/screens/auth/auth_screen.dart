@@ -1,3 +1,4 @@
+import 'package:firstapp/src/screens/register/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -51,7 +52,9 @@ class AuthScreen extends StatelessWidget {
             color: Color(0xFF4631d2),
             child: const Text('Зарегистрироваться',
             style: TextStyle(fontWeight: FontWeight.bold),
-            ), onPressed: () {}),
+            ), onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => const RegisterScreen()));
+            }),
         )
       ],
     ),);
